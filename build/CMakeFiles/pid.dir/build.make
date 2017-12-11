@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mo/CarND-PID-Control-Project/src
+CMAKE_SOURCE_DIR = /home/mo/CarND-PID-Control-Project
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/mo/CarND-PID-Control-Project/build
@@ -57,93 +57,67 @@ include CMakeFiles/pid.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pid.dir/flags.make
 
-CMakeFiles/pid.dir/PID.cpp.o: CMakeFiles/pid.dir/flags.make
-CMakeFiles/pid.dir/PID.cpp.o: /home/mo/CarND-PID-Control-Project/src/PID.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pid.dir/PID.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid.dir/PID.cpp.o -c /home/mo/CarND-PID-Control-Project/src/PID.cpp
+CMakeFiles/pid.dir/src/PID.cpp.o: CMakeFiles/pid.dir/flags.make
+CMakeFiles/pid.dir/src/PID.cpp.o: ../src/PID.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pid.dir/src/PID.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid.dir/src/PID.cpp.o -c /home/mo/CarND-PID-Control-Project/src/PID.cpp
 
-CMakeFiles/pid.dir/PID.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid.dir/PID.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mo/CarND-PID-Control-Project/src/PID.cpp > CMakeFiles/pid.dir/PID.cpp.i
+CMakeFiles/pid.dir/src/PID.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid.dir/src/PID.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mo/CarND-PID-Control-Project/src/PID.cpp > CMakeFiles/pid.dir/src/PID.cpp.i
 
-CMakeFiles/pid.dir/PID.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid.dir/PID.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mo/CarND-PID-Control-Project/src/PID.cpp -o CMakeFiles/pid.dir/PID.cpp.s
+CMakeFiles/pid.dir/src/PID.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid.dir/src/PID.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mo/CarND-PID-Control-Project/src/PID.cpp -o CMakeFiles/pid.dir/src/PID.cpp.s
 
-CMakeFiles/pid.dir/PID.cpp.o.requires:
+CMakeFiles/pid.dir/src/PID.cpp.o.requires:
 
-.PHONY : CMakeFiles/pid.dir/PID.cpp.o.requires
+.PHONY : CMakeFiles/pid.dir/src/PID.cpp.o.requires
 
-CMakeFiles/pid.dir/PID.cpp.o.provides: CMakeFiles/pid.dir/PID.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/PID.cpp.o.provides.build
-.PHONY : CMakeFiles/pid.dir/PID.cpp.o.provides
+CMakeFiles/pid.dir/src/PID.cpp.o.provides: CMakeFiles/pid.dir/src/PID.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/PID.cpp.o.provides.build
+.PHONY : CMakeFiles/pid.dir/src/PID.cpp.o.provides
 
-CMakeFiles/pid.dir/PID.cpp.o.provides.build: CMakeFiles/pid.dir/PID.cpp.o
-
-
-CMakeFiles/pid.dir/Twiddle.cpp.o: CMakeFiles/pid.dir/flags.make
-CMakeFiles/pid.dir/Twiddle.cpp.o: /home/mo/CarND-PID-Control-Project/src/Twiddle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pid.dir/Twiddle.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid.dir/Twiddle.cpp.o -c /home/mo/CarND-PID-Control-Project/src/Twiddle.cpp
-
-CMakeFiles/pid.dir/Twiddle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid.dir/Twiddle.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mo/CarND-PID-Control-Project/src/Twiddle.cpp > CMakeFiles/pid.dir/Twiddle.cpp.i
-
-CMakeFiles/pid.dir/Twiddle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid.dir/Twiddle.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mo/CarND-PID-Control-Project/src/Twiddle.cpp -o CMakeFiles/pid.dir/Twiddle.cpp.s
-
-CMakeFiles/pid.dir/Twiddle.cpp.o.requires:
-
-.PHONY : CMakeFiles/pid.dir/Twiddle.cpp.o.requires
-
-CMakeFiles/pid.dir/Twiddle.cpp.o.provides: CMakeFiles/pid.dir/Twiddle.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.o.provides.build
-.PHONY : CMakeFiles/pid.dir/Twiddle.cpp.o.provides
-
-CMakeFiles/pid.dir/Twiddle.cpp.o.provides.build: CMakeFiles/pid.dir/Twiddle.cpp.o
+CMakeFiles/pid.dir/src/PID.cpp.o.provides.build: CMakeFiles/pid.dir/src/PID.cpp.o
 
 
-CMakeFiles/pid.dir/main.cpp.o: CMakeFiles/pid.dir/flags.make
-CMakeFiles/pid.dir/main.cpp.o: /home/mo/CarND-PID-Control-Project/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pid.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid.dir/main.cpp.o -c /home/mo/CarND-PID-Control-Project/src/main.cpp
+CMakeFiles/pid.dir/src/main.cpp.o: CMakeFiles/pid.dir/flags.make
+CMakeFiles/pid.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pid.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid.dir/src/main.cpp.o -c /home/mo/CarND-PID-Control-Project/src/main.cpp
 
-CMakeFiles/pid.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mo/CarND-PID-Control-Project/src/main.cpp > CMakeFiles/pid.dir/main.cpp.i
+CMakeFiles/pid.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid.dir/src/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mo/CarND-PID-Control-Project/src/main.cpp > CMakeFiles/pid.dir/src/main.cpp.i
 
-CMakeFiles/pid.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mo/CarND-PID-Control-Project/src/main.cpp -o CMakeFiles/pid.dir/main.cpp.s
+CMakeFiles/pid.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid.dir/src/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mo/CarND-PID-Control-Project/src/main.cpp -o CMakeFiles/pid.dir/src/main.cpp.s
 
-CMakeFiles/pid.dir/main.cpp.o.requires:
+CMakeFiles/pid.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/pid.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/pid.dir/src/main.cpp.o.requires
 
-CMakeFiles/pid.dir/main.cpp.o.provides: CMakeFiles/pid.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/pid.dir/main.cpp.o.provides
+CMakeFiles/pid.dir/src/main.cpp.o.provides: CMakeFiles/pid.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/pid.dir/src/main.cpp.o.provides
 
-CMakeFiles/pid.dir/main.cpp.o.provides.build: CMakeFiles/pid.dir/main.cpp.o
+CMakeFiles/pid.dir/src/main.cpp.o.provides.build: CMakeFiles/pid.dir/src/main.cpp.o
 
 
 # Object files for target pid
 pid_OBJECTS = \
-"CMakeFiles/pid.dir/PID.cpp.o" \
-"CMakeFiles/pid.dir/Twiddle.cpp.o" \
-"CMakeFiles/pid.dir/main.cpp.o"
+"CMakeFiles/pid.dir/src/PID.cpp.o" \
+"CMakeFiles/pid.dir/src/main.cpp.o"
 
 # External object files for target pid
 pid_EXTERNAL_OBJECTS =
 
-pid: CMakeFiles/pid.dir/PID.cpp.o
-pid: CMakeFiles/pid.dir/Twiddle.cpp.o
-pid: CMakeFiles/pid.dir/main.cpp.o
+pid: CMakeFiles/pid.dir/src/PID.cpp.o
+pid: CMakeFiles/pid.dir/src/main.cpp.o
 pid: CMakeFiles/pid.dir/build.make
 pid: CMakeFiles/pid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable pid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/CarND-PID-Control-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable pid"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pid.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,9 +125,8 @@ CMakeFiles/pid.dir/build: pid
 
 .PHONY : CMakeFiles/pid.dir/build
 
-CMakeFiles/pid.dir/requires: CMakeFiles/pid.dir/PID.cpp.o.requires
-CMakeFiles/pid.dir/requires: CMakeFiles/pid.dir/Twiddle.cpp.o.requires
-CMakeFiles/pid.dir/requires: CMakeFiles/pid.dir/main.cpp.o.requires
+CMakeFiles/pid.dir/requires: CMakeFiles/pid.dir/src/PID.cpp.o.requires
+CMakeFiles/pid.dir/requires: CMakeFiles/pid.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/pid.dir/requires
 
@@ -162,6 +135,6 @@ CMakeFiles/pid.dir/clean:
 .PHONY : CMakeFiles/pid.dir/clean
 
 CMakeFiles/pid.dir/depend:
-	cd /home/mo/CarND-PID-Control-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mo/CarND-PID-Control-Project/src /home/mo/CarND-PID-Control-Project/src /home/mo/CarND-PID-Control-Project/build /home/mo/CarND-PID-Control-Project/build /home/mo/CarND-PID-Control-Project/build/CMakeFiles/pid.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mo/CarND-PID-Control-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mo/CarND-PID-Control-Project /home/mo/CarND-PID-Control-Project /home/mo/CarND-PID-Control-Project/build /home/mo/CarND-PID-Control-Project/build /home/mo/CarND-PID-Control-Project/build/CMakeFiles/pid.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pid.dir/depend
 

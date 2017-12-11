@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mo/CarND-PID-Control-Project/src
+CMAKE_SOURCE_DIR = /home/mo/CarND-PID-Control-Project
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/mo/CarND-PID-Control-Project/build
@@ -123,86 +123,59 @@ pid/fast:
 	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/build
 .PHONY : pid/fast
 
-PID.o: PID.cpp.o
+src/PID.o: src/PID.cpp.o
 
-.PHONY : PID.o
-
-# target to build an object file
-PID.cpp.o:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/PID.cpp.o
-.PHONY : PID.cpp.o
-
-PID.i: PID.cpp.i
-
-.PHONY : PID.i
-
-# target to preprocess a source file
-PID.cpp.i:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/PID.cpp.i
-.PHONY : PID.cpp.i
-
-PID.s: PID.cpp.s
-
-.PHONY : PID.s
-
-# target to generate assembly for a file
-PID.cpp.s:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/PID.cpp.s
-.PHONY : PID.cpp.s
-
-Twiddle.o: Twiddle.cpp.o
-
-.PHONY : Twiddle.o
+.PHONY : src/PID.o
 
 # target to build an object file
-Twiddle.cpp.o:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.o
-.PHONY : Twiddle.cpp.o
+src/PID.cpp.o:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/PID.cpp.o
+.PHONY : src/PID.cpp.o
 
-Twiddle.i: Twiddle.cpp.i
+src/PID.i: src/PID.cpp.i
 
-.PHONY : Twiddle.i
+.PHONY : src/PID.i
 
 # target to preprocess a source file
-Twiddle.cpp.i:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.i
-.PHONY : Twiddle.cpp.i
+src/PID.cpp.i:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/PID.cpp.i
+.PHONY : src/PID.cpp.i
 
-Twiddle.s: Twiddle.cpp.s
+src/PID.s: src/PID.cpp.s
 
-.PHONY : Twiddle.s
+.PHONY : src/PID.s
 
 # target to generate assembly for a file
-Twiddle.cpp.s:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.s
-.PHONY : Twiddle.cpp.s
+src/PID.cpp.s:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/PID.cpp.s
+.PHONY : src/PID.cpp.s
 
-main.o: main.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : main.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -213,15 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pid"
-	@echo "... PID.o"
-	@echo "... PID.i"
-	@echo "... PID.s"
-	@echo "... Twiddle.o"
-	@echo "... Twiddle.i"
-	@echo "... Twiddle.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/PID.o"
+	@echo "... src/PID.i"
+	@echo "... src/PID.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
