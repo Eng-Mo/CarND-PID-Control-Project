@@ -1,6 +1,11 @@
 #include "PID.h"
+#include"Twiddle.h"
 
-using namespace std;
+
+
+//using namespace std;
+
+
 
 /*
 * TODO: Complete the PID class.
@@ -11,9 +16,12 @@ PID::PID() {}
 PID::~PID() {}
 
 void PID::Init(double Kp, double Ki, double Kd) {
+
 	Kp_=Kp;
 	Ki_=Ki;
 	Kd_=Kd;
+
+
 
 	p_error=0;
 	i_error=0;

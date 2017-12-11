@@ -3,8 +3,13 @@
 
 CMakeFiles/pid.dir/PID.cpp.o: /home/mo/CarND-PID-Control-Project/src/PID.cpp
 CMakeFiles/pid.dir/PID.cpp.o: /home/mo/CarND-PID-Control-Project/src/PID.h
+CMakeFiles/pid.dir/PID.cpp.o: /home/mo/CarND-PID-Control-Project/src/Twiddle.h
+
+CMakeFiles/pid.dir/Twiddle.cpp.o: /home/mo/CarND-PID-Control-Project/src/Twiddle.cpp
+CMakeFiles/pid.dir/Twiddle.cpp.o: /home/mo/CarND-PID-Control-Project/src/Twiddle.h
 
 CMakeFiles/pid.dir/main.cpp.o: /home/mo/CarND-PID-Control-Project/src/PID.h
+CMakeFiles/pid.dir/main.cpp.o: /home/mo/CarND-PID-Control-Project/src/Twiddle.h
 CMakeFiles/pid.dir/main.cpp.o: /home/mo/CarND-PID-Control-Project/src/json.hpp
 CMakeFiles/pid.dir/main.cpp.o: /home/mo/CarND-PID-Control-Project/src/main.cpp
 

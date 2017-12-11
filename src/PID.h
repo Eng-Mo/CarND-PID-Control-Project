@@ -1,6 +1,8 @@
 #ifndef PID_H
 #define PID_H
 
+#include"Twiddle.h"
+
 class PID {
 public:
   /*
@@ -12,10 +14,17 @@ public:
 
   /*
   * Coefficients
-  */ 
+  */
+
   double Kp_;
   double Ki_;
   double Kd_;
+  double p[3]={0,0,0};
+  double dp[3]={1,1,1};
+
+  Twiddle t;
+
+
 
 
   /*

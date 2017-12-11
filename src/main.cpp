@@ -4,6 +4,7 @@
 #include "PID.h"
 #include <math.h>
 
+
 // for convenience
 using json = nlohmann::json;
 
@@ -32,16 +33,17 @@ int main()
 {
   uWS::Hub h;
 
+
   PID pid_steering;
   PID pid_speed;
   // TODO: Initialize the pid variable.
-  double kp_steer=1.0;
-  double ki_steer=.0005;
-  double kd_steer=2;
+  double kp_steer=.07/*.5*/;//overshoot
+  double ki_steer=.005/*.005*/;
+  double kd_steer=2/*5*/; //oscilate
 
-  double kp_speed=.6;
+  double kp_speed=0;
   double ki_speed=0;
-  double kd_speed=2;
+  double kd_speed=0;
   pid_steering.Init(kp_steer,ki_steer,kd_steer);
   pid_speed.Init(kp_speed,ki_speed,kd_speed);
 
@@ -73,14 +75,14 @@ int main()
           steer_value=pid_steering.TotalError();
 
           pid_speed.UpdateError(cte);
-          throttle=fabs(pid_speed.TotalError());
+          throttle=pid_speed.TotalError();
           
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
-          msgJson["throttle"] = .15;
+          msgJson["throttle"] = .25;
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);

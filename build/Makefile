@@ -150,6 +150,33 @@ PID.cpp.s:
 	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/PID.cpp.s
 .PHONY : PID.cpp.s
 
+Twiddle.o: Twiddle.cpp.o
+
+.PHONY : Twiddle.o
+
+# target to build an object file
+Twiddle.cpp.o:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.o
+.PHONY : Twiddle.cpp.o
+
+Twiddle.i: Twiddle.cpp.i
+
+.PHONY : Twiddle.i
+
+# target to preprocess a source file
+Twiddle.cpp.i:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.i
+.PHONY : Twiddle.cpp.i
+
+Twiddle.s: Twiddle.cpp.s
+
+.PHONY : Twiddle.s
+
+# target to generate assembly for a file
+Twiddle.cpp.s:
+	$(MAKE) -f CMakeFiles/pid.dir/build.make CMakeFiles/pid.dir/Twiddle.cpp.s
+.PHONY : Twiddle.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... PID.o"
 	@echo "... PID.i"
 	@echo "... PID.s"
+	@echo "... Twiddle.o"
+	@echo "... Twiddle.i"
+	@echo "... Twiddle.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
