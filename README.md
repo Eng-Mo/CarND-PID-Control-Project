@@ -51,7 +51,7 @@ I tuned the PID controller by setting D &I terms to zero and start to tune P unt
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./mpc`.
+4. Run it: `./pid`.
 
 
 
